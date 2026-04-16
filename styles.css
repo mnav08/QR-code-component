@@ -1,0 +1,80 @@
+:root {
+  /**COLORS**/
+  --white: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+  /** SPACING **/
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-500);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 120%;
+  color: var(--Slate-900);
+}
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  color: var(--Slate-500);
+}
+
+/** MAIN STYLES**/
+
+/** QR CODE IMG**/
+.img-container {
+  max-width: 288px;
+  width: 100%;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**outside flex container**/
+.container {
+  padding: var(--space-200) var(--space-200) var(--space-500) var(--space-200);
+  max-width: 320px;
+  height: 500px;
+  background-color: var(--white);
+  border-radius: var(--space-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-300);
+}
+/** TEXT CONTAINER**/
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-300);
+}
